@@ -1,0 +1,37 @@
+{
+  "name": "smart-escrow-backend",
+  "version": "2.0.0",
+  "private": true,
+  "description": "SmartEscrow - Hardhat workspace (contracts, tests, deployment and demo scripts)",
+  "main": "scripts/deploy.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "seed:local": "hardhat run scripts/seed-demo.js --network localhost",
+    "demo": "hardhat run scripts/demo-flow.js",
+    "demo:local": "hardhat run scripts/demo-flow.js --network localhost",
+    "keeper": "hardhat run scripts/keeper.js --network localhost",
+    "accounts": "hardhat run scripts/print-accounts.js",
+    "export:abi": "hardhat run scripts/export-abi.js",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "blockchain",
+    "escrow",
+    "solidity",
+    "hardhat",
+    "geolocation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
+
